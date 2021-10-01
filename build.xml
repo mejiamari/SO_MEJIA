@@ -7,8 +7,8 @@
 <!-- the Compile on Save feature is turned off for the project. -->
 <!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
 <!-- in the project's Project Properties dialog box.-->
-<project name="SO_MEJIA7" default="default" basedir=".">
-    <description>Builds, tests, and runs the project SO_MEJIA7.</description>
+<project name="SO_MEJIA" default="default" basedir=".">
+    <description>Builds, tests, and runs the project SO_MEJIA.</description>
     <import file="nbproject/build-impl.xml"/>
     <!--
 
