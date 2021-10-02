@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -5,11 +6,13 @@
  */
 package dto;
 
+import java.io.Serializable;
+
 /**
  *
  * @author HP
  */
-public class alumno {
+public class alumno implements Serializable{
     private static final long serialVersionUID = 1l;
     private int id;
     private int idMateria;

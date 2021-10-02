@@ -5,11 +5,13 @@
  */
 package dto;
 
+import java.io.Serializable;
+
 /**
  *
  * @author HP
  */
-public class universidad {
+public class universidad implements Serializable{
      private static final long serialVersionUID = 1l; 
     private int id;
     private String nombre;

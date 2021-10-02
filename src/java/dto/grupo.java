@@ -5,11 +5,13 @@
  */
 package dto;
 
+import java.io.Serializable;
+
 /**
  *
  * @author HP
  */
-public class grupo {
+public class grupo implements Serializable {
     private static final long serialVersionUID = 1l; 
     private int id;
     private int id_grado;
