@@ -5,40 +5,36 @@
  */
 package dao.impl;
 
-import dao.Ialumno;
+import dao.Imateria;
 
 /**
  *
  * @author HP
  */
-public class alumnoImpl implements Ialumno {
-   
-     @Override
-    public int InsertarAlumno (int id,int idMateria,String username,
-     String nombre,String apellido_paterno,
-     String apellido_materno,String estatus){
-     return 0;
-    }
-   
-    
-    
-    
+public class materiaImpl implements Imateria{
     @Override
-    public int ConsultarAlumno (int id) {
-        return 0;
-        
-    }
-            
-    
-    @Override
-    public int ModificarAlumno (int id) {
+    public int InsertarMateria ( int id, int id_grupo,
+      String nombre,String estatus){
         return 0;
         
     }
     
     
     @Override
-    public int BorrarAlumno (int id){
+    public int ConsultarMateria (int id){
+        return 0;
+        
+    }
+    
+    
+    @Override
+    public int ModificarMateria (int id){
+        return 0;
+        
+    }
+    
+    @Override
+    public int BorrarMateria (int id){
         return 0;
         
     }
