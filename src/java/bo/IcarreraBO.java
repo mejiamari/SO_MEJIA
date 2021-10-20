@@ -5,19 +5,21 @@
  */
 package bo;
 
+import dto.carrera;
+
 /**
  *
  * @author ACER SWIFT 3
  */
 public interface IcarreraBO {
      
-    public int GenerarCarrera(int id,int id_universidad,
+    public int InsertarCarrera(int id,int id_universidad,
           String nombre,String estatus);
   
             
   
-    public int ConsultarCarrera (int id,int id_universidad,
-          String nombre,String estatus);
+    public carrera ConsultarCarrera (int id,
+          String nombre);
     
     
     public int ModificarCarrera (int id,int id_universidad,

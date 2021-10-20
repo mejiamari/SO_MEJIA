@@ -6,40 +6,39 @@
 package dao.impl;
 
 import dao.Ialumno;
+import dto.alumno;
 
 /**
  *
  * @author HP
  */
 public class alumnoImpl implements Ialumno {
-   
+       
+    @Override
+    public alumno ConsultarAlumno (String username,int id) {
+        return null;
+        
+    }
+    
      @Override
     public int InsertarAlumno (int id,int idMateria,String username,
      String nombre,String apellido_paterno,
      String apellido_materno,String estatus){
-     return 0;
+     int a=0;
+     return a;
     }
    
-    
-    
-    
-    @Override
-    public int ConsultarAlumno (int id) {
-        return 0;
-        
-    }
-            
-    
     @Override
     public int ModificarAlumno (int id) {
-        return 0;
-        
+     int a=0;
+     return a;
     }
     
     
     @Override
     public int BorrarAlumno (int id){
-        return 0;
+     int a=0;
+     return a;
         
     }
     

@@ -6,6 +6,7 @@
 package dao.impl;
 
 import dao.Icarrera;
+import dto.carrera;
 
 /**
  *
@@ -21,9 +22,9 @@ public class carreraImpl implements Icarrera{
     }
             
     @Override
-    public int ConsultarCarrera (int id) {
-        return 0;
-        
+    public carrera ConsultarCarrera (int id,
+            String nombre) {
+            return null;
     }
     
     

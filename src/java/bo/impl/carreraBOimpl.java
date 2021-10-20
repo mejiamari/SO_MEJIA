@@ -6,6 +6,10 @@
 package bo.impl;
 
 import bo.IcarreraBO;
+import dao.Ialumno;
+import dao.Icarrera;
+import dto.alumno;
+import dto.carrera;
 
 
 /**
@@ -15,7 +19,7 @@ import bo.IcarreraBO;
 public class carreraBOimpl implements  IcarreraBO{
     
 @Override
-public int GenerarCarrera(int id,int id_universidad,
+public int InsertarCarrera(int id,int id_universidad,
           String nombre,String estatus){
      int tmp=0;
      return tmp;
@@ -25,10 +29,17 @@ public int GenerarCarrera(int id,int id_universidad,
             
   
 @Override
-    public int ConsultarCarrera (int id,int id_universidad,
-          String nombre,String estatus){
-    return 0;
-        
+    public carrera ConsultarCarrera (int id,
+          String nombre){
+   Icarrera cDAO =null;
+     carrera Carrera = null;
+     
+     if (nombre !=null){
+         Carrera =cDAO.ConsultarCarrera(id,nombre);
+     }else {
+         System.out.println("Hay un parametro nulo, favor de validar");
+     }
+     return Carrera;     
     }
 @Override
     public int ModificarCarrera (int id,int id_universidad,

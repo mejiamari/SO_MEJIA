@@ -5,6 +5,8 @@
  */
 package dao;
 
+import dto.carrera;
+
 /**
  *
  * @author HP
@@ -14,7 +16,8 @@ public interface Icarrera {
     public int InsertarCarrera(int id,int id_universidad,
             String nombre,String estatus);
     
-     public int ConsultarCarrera (int id);
+   public carrera ConsultarCarrera (int id,
+            String nombre);
     
     
     public int ModificarCarrera (int id);

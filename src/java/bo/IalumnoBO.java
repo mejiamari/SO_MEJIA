@@ -12,11 +12,11 @@ import dto.alumno;
  * @author HP
  */
 public interface IalumnoBO {
-    public alumno ConsultarAlumno(
+    public alumno ConsultarAlumno(int id,
      String nombre, String apellido_paterno,
-     String apellido_materno);
+     String apellido_materno,String username);
     
-       public int  GenerarAlumno(
+       public int  InsertarAlumno(
      String nombre, String apellido_paterno,
      String apellido_materno,String username,String estatus);
        

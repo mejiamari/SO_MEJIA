@@ -6,6 +6,7 @@
 package bo.impl;
 
 import bo.IalumnoBO;
+import dao.Ialumno;
 import dto.alumno;
 
 /**
@@ -15,14 +16,23 @@ import dto.alumno;
 public class alumnoBOimpl implements IalumnoBO{
     
      @Override
-     public alumno ConsultarAlumno(
+     public alumno ConsultarAlumno( int id,
      String nombre, String apellido_paterno,
-     String apellido_materno){
-        return null;  
+     String apellido_materno,String username){
+     Ialumno aDAO =null;
+     alumno Alumno = null;
+     
+     if (username !=null){
+         Alumno =aDAO.ConsultarAlumno(username, id);
+     }else {
+         System.out.println("Hay un parametro nulo, favor de validar");
+     }
+     return Alumno;
      }
     
+     
      @Override
-       public int  GenerarAlumno(
+       public int  InsertarAlumno(
      String nombre, String apellido_paterno,
      String apellido_materno,String username,String estatus){
            int tmp=0;
