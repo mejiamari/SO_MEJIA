@@ -6,6 +6,10 @@
 package bo.impl;
 
 import bo.IuniversidadBO;
+import dao.Imateria;
+import dao.Iuniversidad;
+import dto.materia;
+import dto.universidad;
 
 /**
  *
@@ -16,29 +20,41 @@ public class universidadBOimpl implements IuniversidadBO{
      @Override
      public int InsertarUniversidad ( int id,
      String nombre,String estatus){
-         return 0;
+         int tmp=0;
+         return tmp;
+        
          
      }
     
     
      @Override
-    public int ConsultarUniversidad (int id,
-     String nombre,String estatus){
-         return 0;
+    public universidad ConsultarUniversidad (int id,
+     String nombre){
+     Iuniversidad uDAO =null;
+     universidad Universidad = null;
+     
+     if (nombre !=null){
+         Universidad =uDAO.ConsultarUniversidad(id, nombre);
+     }else {
+         System.out.println("Hay un parametro nulo, favor de validar");
+     }
+     return Universidad;
         
     }
     
     
      @Override
     public int ModificarUniversidad (int id,
-     String nombre,String estatus){
-         return 0;
+     String nombre){
+         int tmp=0;
+         return tmp;
         
     }
     
      @Override
     public int BorrarUniversidad (int id){
-         return 0;
+          int tmp=0;
+         return tmp;
         
     }
 }

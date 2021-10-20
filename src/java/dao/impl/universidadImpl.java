@@ -6,36 +6,44 @@
 package dao.impl;
 
 import dao.Iuniversidad;
+import dto.universidad;
 
 /**
  *
  * @author HP
  */
 public class universidadImpl implements Iuniversidad {
-       @Override
+       
+    @Override
        public int InsertarUniversidad ( int id,
      String nombre,String estatus){
-        return 0;
+         int tmp=0;
+         return tmp;
+        
         
     }
     
     
        @Override
-    public int ConsultarUniversidad (int id){
-        return 0;
+    public universidad ConsultarUniversidad (int id,
+     String nombre){
+        return null;
         
     }
     
     
        @Override
-    public int ModificarUniversidad (int id){
-        return 0;
-        
+    public int ModificarUniversidad ( int id,
+     String nombre,String estatus){
+         int tmp=0;
+         return tmp;
+                
     }
     
        @Override
     public int BorrarUniversidad (int id){
-        return 0;
+          int tmp=0;
+         return tmp;
         
     }
     

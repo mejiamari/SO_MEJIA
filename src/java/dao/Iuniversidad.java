@@ -5,6 +5,8 @@
  */
 package dao;
 
+import dto.universidad;
+
 /**
  *
  * @author HP
@@ -14,10 +16,12 @@ public interface Iuniversidad {
      String nombre,String estatus);
     
     
-    public int ConsultarUniversidad (int id);
+    public universidad ConsultarUniversidad (int id,
+     String nombre);
     
     
-    public int ModificarUniversidad (int id);
+    public int ModificarUniversidad ( int id,
+     String nombre,String estatus);
     
     public int BorrarUniversidad (int id);  
     
