@@ -5,6 +5,8 @@
  */
 package dao;
 
+import dto.grupo;
+
 /**
  *
  * @author HP
@@ -13,7 +15,7 @@ public interface Igrupo {
     public int InsertarGrupo ( int id,int id_grado,String nombre,String estatus);
     
     
-    public int ConsultarGrupo (int id);
+    public grupo ConsultarGrupo (String nombre, int id);
     
     
     public int ModificarGrupo (int id);

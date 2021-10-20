@@ -5,6 +5,8 @@
  */
 package bo;
 
+import dto.grupo;
+
 /**
  *
  * @author ACER SWIFT 3
@@ -13,7 +15,7 @@ public interface IgrupoBO {
     public int InsertarGrupo ( int id,int id_grado,String nombre,String estatus);
     
     
-    public int ConsultarGrupo ( int id,int id_grado,String nombre,String estatus);
+     public grupo ConsultarGrupo ( int id,String nombre);
     
     
     public int ModificarGrupo ( int id,int id_grado,String nombre,String estatus);

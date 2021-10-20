@@ -6,6 +6,7 @@
 package bo.impl;
 
 import bo.IgrupoBO;
+import dto.grupo;
 
 /**
  *
@@ -15,26 +16,28 @@ public class grupoBOimpl implements IgrupoBO{
     
     @Override
     public int InsertarGrupo ( int id,int id_grado,String nombre,String estatus){
-        return 0;
+          int tmp=0;
+         return tmp;
         
     }
     
     
     @Override
-    public int ConsultarGrupo ( int id,int id_grado,String nombre,String estatus){
-        return 0;
+    public grupo ConsultarGrupo ( int id,String nombre){
+        return null;
         
     }
     
     @Override
     public int ModificarGrupo ( int id,int id_grado,String nombre,String estatus){
-        return 0;
-        
+         int tmp=0;
+         return tmp;
     }
     
     @Override
     public int BorrarGrupo (int id){
-        return 0;
+         int tmp=0;
+         return tmp;
         
     }
 }

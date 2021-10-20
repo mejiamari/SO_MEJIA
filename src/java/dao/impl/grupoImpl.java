@@ -6,6 +6,7 @@
 package dao.impl;
 
 import dao.Igrupo;
+import dto.grupo;
 
 /**
  *
@@ -14,29 +15,29 @@ import dao.Igrupo;
 public class grupoImpl implements Igrupo{
      @Override
      public int InsertarGrupo ( int id,int id_grado,String nombre,String estatus){
-        return 0;
+           int tmp=0;
+         return tmp;
         
     }
     
     
      @Override
-    public int ConsultarGrupo (int id){
-        return 0;
+    public grupo ConsultarGrupo (String nombre, int id){
+        return null;
         
     }
     
     
      @Override
     public int ModificarGrupo (int id){
-        return 0;
+           int tmp=0;
+         return tmp;
         
     }
     
      @Override
     public int BorrarGrupo (int id){
-        return 0;
-        
+       int tmp=0;
+         return tmp;
     }
-   
-    
 }
