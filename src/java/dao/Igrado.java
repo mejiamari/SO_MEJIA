@@ -5,6 +5,8 @@
  */
 package dao;
 
+import dto.grado;
+
 /**
  *
  * @author HP
@@ -14,7 +16,7 @@ public interface Igrado {
              String nombre,String estatus);
     
     
-    public int ConsultarGrado (int id);
+    public grado ConsultarGrado (String nombre,int id);
     
     
     public int ModificarGrado (int id);

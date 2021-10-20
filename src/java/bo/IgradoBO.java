@@ -5,6 +5,8 @@
  */
 package bo;
 
+import dto.grado;
+
 /**
  *
  * @author ACER SWIFT 3
@@ -15,8 +17,7 @@ public interface IgradoBO {
              String nombre,String estatus);
     
     
-    public int ConsultarGrado (int id,int id_carrera,
-             String nombre,String estatus);
+  public grado ConsultarGrado (String nombre,int id);
     
     
     public int ModificarGrado (int id,int id_carrera,

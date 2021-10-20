@@ -6,6 +6,7 @@
 package dao.impl;
 
 import dao.Igrado;
+import dto.grado;
 
 /**
  *
@@ -16,23 +17,26 @@ public class gradoImpl implements Igrado {
     @Override
     public int InsertarGrado ( int id,int id_carrera,
              String nombre,String estatus){
-     return 0;
+         int tmp=0;
+         return tmp;
     }
             
     @Override
-    public int ConsultarGrado (int id){
-     return 0;
+     public grado ConsultarGrado (String nombre,int id){
+     return null;
     }
     
     
     @Override
     public int ModificarGrado (int id){
-     return 0;
+     int tmp=0;
+     return tmp;
     }
     
     @Override
     public int BorrarGrado (int id){
-     return 0;
+   int tmp=0;
+   return tmp;
     }
     
 }

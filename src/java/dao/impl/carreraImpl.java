@@ -17,7 +17,8 @@ public class carreraImpl implements Icarrera{
     @Override
     public int InsertarCarrera(int id,int id_universidad,
             String nombre,String estatus) {
-        return 0;
+        int tmp=0;
+         return tmp;
         
     }
             
@@ -30,13 +31,14 @@ public class carreraImpl implements Icarrera{
     
     @Override
     public int ModificarCarrera (int id) {
-        return 0;
+       int tmp=0;
+         return tmp;
         
     }
     
     @Override
     public int BorrarCarrera (int id) {
-        return 0;
-        
+       int tmp=0;
+         return tmp;
     }
 }
