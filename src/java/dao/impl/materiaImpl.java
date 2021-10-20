@@ -6,6 +6,7 @@
 package dao.impl;
 
 import dao.Imateria;
+import dto.materia;
 
 /**
  *
@@ -15,28 +16,31 @@ public class materiaImpl implements Imateria{
     @Override
     public int InsertarMateria ( int id, int id_grupo,
       String nombre,String estatus){
-        return 0;
+         int tmp=0;
+         return tmp;
         
     }
     
     
     @Override
-    public int ConsultarMateria (int id){
-        return 0;
+    public materia ConsultarMateria (String nombre,int id){
+        return null;
         
     }
     
     
     @Override
-    public int ModificarMateria (int id){
-        return 0;
+    public int ModificarMateria (int id, int id_grupo,
+      String nombre,String estatus){
+         int tmp=0;
+         return tmp;
         
     }
     
     @Override
     public int BorrarMateria (int id){
-        return 0;
-        
+         int tmp=0;
+         return tmp;
     }
     
     

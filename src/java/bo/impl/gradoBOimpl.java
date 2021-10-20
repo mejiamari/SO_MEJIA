@@ -28,11 +28,11 @@ public class gradoBOimpl implements IgradoBO{
     
      @Override
    public grado ConsultarGrado (String nombre,int id){
-        Igrado gDAO =null;
+        Igrado gaDAO =null;
      grado Grado = null;
      
      if (nombre !=null){
-         Grado =gDAO.ConsultarGrado(nombre, id);
+         Grado =gaDAO.ConsultarGrado(nombre, id);
      }else {
          System.out.println("Hay un parametro nulo, favor de validar");
      }

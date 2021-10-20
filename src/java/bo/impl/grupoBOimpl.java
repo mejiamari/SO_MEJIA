@@ -6,6 +6,9 @@
 package bo.impl;
 
 import bo.IgrupoBO;
+import dao.Igrado;
+import dao.Igrupo;
+import dto.grado;
 import dto.grupo;
 
 /**
@@ -24,7 +27,16 @@ public class grupoBOimpl implements IgrupoBO{
     
     @Override
     public grupo ConsultarGrupo ( int id,String nombre){
-        return null;
+        Igrupo guDAO =null;
+     grupo Grupo = null;
+     
+     if (nombre !=null){
+         Grupo =guDAO.ConsultarGrupo(nombre, id);
+     }else {
+         System.out.println("Hay un parametro nulo, favor de validar");
+     }
+     return Grupo;
+     
         
     }
     

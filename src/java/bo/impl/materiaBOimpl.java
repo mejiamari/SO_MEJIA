@@ -6,6 +6,10 @@
 package bo.impl;
 
 import bo.ImateriaBO;
+import dao.Igrado;
+import dao.Imateria;
+import dto.grado;
+import dto.materia;
 
 /**
  *
@@ -16,29 +20,36 @@ public class materiaBOimpl implements ImateriaBO{
     @Override
     public int InsertarMateria ( int id, int id_grupo,
       String nombre,String estatus){
-        return 0;
-        
+         int tmp=0;
+         return tmp;
     }
     
     
     @Override
-    public int ConsultarMateria (int id, int id_grupo,
-      String nombre,String estatus){
-        return 0;
+    public materia ConsultarMateria (int id,String nombre){
+     Imateria mDAO =null;
+     materia Materia = null;
+     
+     if (nombre !=null){
+         Materia =mDAO.ConsultarMateria(nombre, id);
+     }else {
+         System.out.println("Hay un parametro nulo, favor de validar");
+     }
+     return Materia;
         
     }
-    
     
     @Override
     public int ModificarMateria (int id, int id_grupo,
       String nombre,String estatus){
-        return 0;
+         int tmp=0;
+         return tmp;
         
     }
     
     @Override
     public int BorrarMateria (int id){
-        return 0;
-        
+         int tmp=0;
+         return tmp;
     }
 }

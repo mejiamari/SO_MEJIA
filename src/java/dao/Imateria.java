@@ -5,6 +5,8 @@
  */
 package dao;
 
+import dto.materia;
+
 /**
  *
  * @author HP
@@ -15,10 +17,11 @@ public interface Imateria {
       String nombre,String estatus);
     
     
-    public int ConsultarMateria (int id);
+    public materia ConsultarMateria (String nombre,int id);
     
     
-    public int ModificarMateria (int id);
+    public int ModificarMateria (int id, int id_grupo,
+      String nombre,String estatus);
     
     public int BorrarMateria (int id);
     
