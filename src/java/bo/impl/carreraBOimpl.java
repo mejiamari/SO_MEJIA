@@ -37,7 +37,7 @@ public int InsertarCarrera(int id,int id_universidad,
      if (nombre !=null){
          Carrera =cDAO.ConsultarCarrera(id,nombre);
      }else {
-         System.out.println("Hay un parametro nulo, favor de validar");
+         System.out.println("Hay un parametro nulo, favor de validar1");
      }
      return Carrera;     
     }
