@@ -16,10 +16,10 @@ public class alumno implements Serializable{
     private static final long serialVersionUID = 1l;
     private int id;
     private int idMateria;
-    private String username;
+    public String username;
     private String nombre;
-    private String apellido_paterno;
-    private String apellido_materno;
+    public String apellido_paterno;
+    public String apellido_materno;
     private String estatus;
 
     public int getId() {
